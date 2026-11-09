@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -13,15 +12,18 @@ import {
   Quote,
   ShieldCheck,
   Sparkles,
+  Target,
+  Workflow,
+  TrendingUp,
 } from "lucide-react";
 import styles from "./blog-tugas.module.css";
 
 const contents = [
-  { id: "perkembangan-teknologi", number: "01", title: "Perkembangan Tren Teknologi" },
-  { id: "pasar-kerja", number: "02", title: "Dinamika Pasar Kerja" },
-  { id: "kolaborasi-ai", number: "03", title: "Berkolaborasi dengan AI Agent" },
-  { id: "pendidikan-karakter", number: "04", title: "Refleksi Pendidikan Karakter" },
-  { id: "kesimpulan", number: "05", title: "Kesimpulan" },
+  { id: "realita-pasar-kerja", number: "01", title: "Realita Pasar Kerja" },
+  { id: "framework-transisi", number: "02", title: "9 Langkah Transisi Karier" },
+  { id: "perkembangan-ai", number: "03", title: "Disrupsi & Risiko Gen AI" },
+  { id: "pendidikan-karakter", number: "04", title: "Refleksi Karakter & Mental" },
+  { id: "kesimpulan", number: "05", title: "Kesimpulan & Langkah Aksi" },
 ];
 
 export default function BlogTugasPage() {
@@ -48,21 +50,21 @@ export default function BlogTugasPage() {
           </div>
 
           <h1>
-            Menavigasi Karir
+            From Campus
             <br />
-            di Era <span>AI.</span>
+            to <span>Career.</span>
           </h1>
 
           <p className={styles.heroDescription}>
-            Catatan, refleksi, dan insight dari sesi sharing alumni
-            mengenai masa depan teknologi, dinamika industri, dan
-            karakter yang dibutuhkan untuk menghadapi dunia kerja.
+            Catatan, refleksi, dan panduan komprehensif dari sesi sharing alumni
+            Telkom University mengenai realita pasar kerja, 9 langkah transisi karier,
+            serta strategi navigasi di era disrupsi Generative AI.
           </p>
 
           <div className={styles.articleMeta}>
             <span><CalendarDays size={15} /> 2026</span>
-            <span><Clock3 size={15} /> 7 menit membaca</span>
-            <span><BookOpen size={15} /> Artikel refleksi</span>
+            <span><Clock3 size={15} /> 9 menit membaca</span>
+            <span><BookOpen size={15} /> Guide &amp; Refleksi</span>
           </div>
         </div>
 
@@ -85,105 +87,44 @@ export default function BlogTugasPage() {
             <Sparkles size={22} />
           </div>
 
-          <span className={styles.artLabel}>HUMAN × TECHNOLOGY</span>
+          <span className={styles.artLabel}>HUMAN × AI TRANSITION</span>
         </div>
       </section>
 
       <div className={styles.contentLayout}>
         <article className={styles.article}>
           <div className={styles.articleIntro}>
-            <span className={styles.introLabel}>PENGANTAR</span>
+            <span className={styles.introLabel}>PENGANTAR SESI</span>
             <p>
-              Sebagai mahasiswa, kesempatan untuk bertemu dan berdiskusi
-              langsung dengan alumni yang telah terjun ke dunia kerja
-              selalu memberikan perspektif baru. Dalam rangkaian kegiatan
-              mata kuliah <strong>Pendidikan Karakter</strong>, kami
-              mendapatkan kesempatan berharga untuk menyerap pengalaman
-              dari seorang alumni yang kini berkarier sebagai{" "}
-              <strong>Software Architect</strong>.
+              Dalam kegiatan mata kuliah <strong>Pendidikan Karakter</strong>, kami
+              mendapatkan kesempatan berharga untuk berdiskusi dengan alumni Telkom University
+              (S1 Informatika 2015–2019), <strong>Varid Vaya Yusuf</strong>, yang saat ini menjabat
+              sebagai <em>Business Architecture Associate Manager</em> di <strong>Accenture</strong>.
             </p>
             <p>
-              Sesi tersebut bukan sekadar ruang berbagi pengalaman,
-              melainkan kesempatan untuk memahami bagaimana dunia
-              profesional berkembang dan mempersiapkan diri menghadapi
-              perubahan industri yang semakin cepat.
+              Sesi ini memberikan gambaran langsung dari praktisi industri mengenai bagaimana
+              proses rekrutmen bekerja, tantangan nyata lulusan baru, serta pergeseran kriteria
+              keterampilan akibat disrupsi <em>Generative AI</em>.
             </p>
             <p>
-              Dari diskusi tersebut, ada beberapa poin penting yang
-              menarik untuk direnungkan, mulai dari perkembangan
-              Artificial Intelligence hingga karakter yang perlu
-              dibangun oleh calon profesional.
+              Berikut adalah rangkuman materi selengkapnya beserta refleksi nilai-nilai karakter
+              yang perlu dipersiapkan oleh mahasiswa sejak bangku kuliah.
             </p>
           </div>
 
-          <section id="perkembangan-teknologi" className={styles.articleSection}>
+          <section id="realita-pasar-kerja" className={styles.articleSection}>
             <div className={styles.sectionHeading}>
               <span>01</span>
               <div>
-                <span className={styles.sectionEyebrow}>TECHNOLOGY TRENDS</span>
-                <h2>Perkembangan Tren Teknologi: Dari Masa ke Masa Hingga Era AI</h2>
+                <span className={styles.sectionEyebrow}>MARKET REALITY</span>
+                <h2>Realita Pasar Kerja &amp; Tantangan Lulusan Baru</h2>
               </div>
             </div>
 
             <p>
-              Teknologi tidak pernah berhenti bergerak. Alumni membuka
-              sesi dengan mengulas bagaimana tren teknologi berevolusi
-              dari masa ke masa, mulai dari era komputerisasi awal,
-              perkembangan web dan aplikasi seluler, hingga hadirnya
-              Artificial Intelligence (AI) yang kini menjadi salah satu
-              pusat perhatian industri global.
-            </p>
-
-            <p>
-              Berbagai perusahaan teknologi berlomba-lomba mengembangkan
-              produk AI dan menginvestasikan sumber daya dalam jumlah
-              besar. Perkembangan ini membawa banyak peluang, tetapi
-              sekaligus memunculkan pertanyaan kritis: apakah pertumbuhan
-              AI saat ini mencerminkan revolusi jangka panjang, atau
-              terdapat kemungkinan terjadinya fenomena{" "}
-              <em>technology bubble</em>?
-            </p>
-
-            <div className={styles.insightBox}>
-              <div className={styles.insightIcon}><Quote size={22} /></div>
-              <div>
-                <span>INSIGHT PEMIKIRAN</span>
-                <p>
-                  Antusiasme pasar terhadap teknologi belum tentu selalu
-                  sejalan dengan nilai manfaat yang benar-benar dihasilkan.
-                  Karena itu, kita perlu memanfaatkan AI secara produktif
-                  sekaligus tetap kritis dalam menilai perkembangan dan
-                  keberlanjutannya.
-                </p>
-              </div>
-            </div>
-
-            <p>
-              Fenomena <em>bubble effect</em> dapat terjadi ketika
-              ekspektasi dan nilai investasi meningkat jauh melampaui
-              kemampuan atau manfaat nyata suatu teknologi. Hal ini
-              mengingatkan kita bahwa mengikuti tren saja tidak cukup.
-              Mahasiswa perlu memahami alasan di balik perkembangan
-              teknologi, manfaatnya, serta risiko yang mungkin muncul.
-            </p>
-          </section>
-
-          <section id="pasar-kerja" className={styles.articleSection}>
-            <div className={styles.sectionHeading}>
-              <span>02</span>
-              <div>
-                <span className={styles.sectionEyebrow}>CAREER LANDSCAPE</span>
-                <h2>Dinamika Pasar Kerja: Profesi yang Meredup dan yang Naik Daun</h2>
-              </div>
-            </div>
-
-            <p>
-              Perubahan teknologi turut mengubah kebutuhan tenaga kerja.
-              Otomatisasi membuat sejumlah pekerjaan yang bersifat
-              repetitif dan administratif dapat dikerjakan dengan lebih
-              cepat oleh sistem. Di sisi lain, muncul kebutuhan baru
-              terhadap tenaga profesional yang mampu mengelola
-              kompleksitas teknologi.
+              Berdasarkan data dan pengamatan industri, terdapat ketimpangan (<em>gap</em>)
+              antara lulusan perguruan tinggi dan standar kebutuhan dunia profesional.
+              Beberapa tantangan utama yang sering dihadapi mencakup:
             </p>
 
             <div className={styles.careerGrid}>
@@ -191,79 +132,70 @@ export default function BlogTugasPage() {
                 <div className={`${styles.careerCardIcon} ${styles.mutedIcon}`}>
                   <BriefcaseBusiness size={22} />
                 </div>
-                <span className={styles.careerTag}>BERTRANSFORMASI</span>
-                <h3>Declining Roles</h3>
+                <span className={styles.careerTag}>DATA INDUSTRI</span>
+                <h3>17 Bulan</h3>
                 <p>
-                  Pekerjaan yang didominasi tugas repetitif, klerikal,
-                  dan eksekusi dasar semakin terdampak otomatisasi.
+                  Rata-rata durasi pencarian kerja pertama yang dibutuhkan oleh lulusan baru
+                  tanpa persiapan portofolio yang matang.
                 </p>
               </div>
 
               <div className={styles.careerCard}>
                 <div className={`${styles.careerCardIcon} ${styles.accentIcon}`}>
-                  <Cpu size={22} />
+                  <TrendingUp size={22} />
                 </div>
-                <span className={styles.careerTag}>BERKEMBANG</span>
-                <h3>Emerging Roles</h3>
+                <span className={styles.careerTag}>MISMATCH RATE</span>
+                <h3>47,3% Lulusan</h3>
                 <p>
-                  Peran seperti AI/ML Engineer, Data Engineer, dan
-                  Software Architect semakin relevan dalam ekosistem
-                  teknologi modern.
+                  Persentase lulusan yang bekerja di luar bidang studi yang ditempuh selama
+                  masa perkuliahan.
                 </p>
               </div>
             </div>
 
             <p>
-              Sebagai seorang Software Architect, alumni menjelaskan
-              bahwa pekerjaan profesional tidak hanya berfokus pada
-              kemampuan menulis kode atau <em>coding</em>. Lebih dari
-              itu, diperlukan kemampuan merancang arsitektur sistem
-              yang skalabel, aman, efisien, dan sesuai dengan kebutuhan
-              bisnis.
+              Selain itu, fenomena <em>overqualification</em> atau bekerja di bawah kualifikasi
+              formal ijazah sering terjadi akibat terbatasnya jumlah lapangan kerja tingkat
+              sarjana (<em>graduate-level jobs</em>), minimnya pengalaman kerja nyata (seperti magang),
+              serta pesatnya tuntutan penguasaan keahlian berbasis AI di industri saat ini.
             </p>
 
-            <p>
-              Artinya, kemampuan teknis perlu disertai pemahaman
-              menyeluruh terhadap masalah yang ingin diselesaikan.
-              Seorang profesional tidak hanya dituntut mengetahui
-              bagaimana membuat sesuatu, tetapi juga memahami mengapa
-              solusi tersebut perlu dibuat.
-            </p>
+            <div className={styles.insightBox}>
+              <div className={styles.insightIcon}><Quote size={22} /></div>
+              <div>
+                <span>INSIGHT UTAMA</span>
+                <p>
+                  Ijazah semata tidak lagi menjamin kelancaran pencarian kerja. Industri modern
+                  menuntut bukti kemampuan nyata, portofolio yang dapat diverifikasi, dan
+                  adaptabilitas terhadap perkembangan teknologi terbaru.
+                </p>
+              </div>
+            </div>
           </section>
 
-          <section id="kolaborasi-ai" className={styles.articleSection}>
+          <section id="framework-transisi" className={styles.articleSection}>
             <div className={styles.sectionHeading}>
-              <span>03</span>
+              <span>02</span>
               <div>
-                <span className={styles.sectionEyebrow}>AI COLLABORATION</span>
-                <h2>Seni Berkolaborasi dengan AI Agent Secara Efektif</h2>
+                <span className={styles.sectionEyebrow}>TRANSITION FRAMEWORK</span>
+                <h2>Framework 9 Langkah Navigasi Transisi Karier</h2>
               </div>
             </div>
 
             <p>
-              Salah satu pembahasan paling praktis dalam sesi sharing
-              tersebut adalah cara memanfaatkan AI Agent ketika
-              mengerjakan proyek. AI dapat membantu mempercepat proses
-              kerja, tetapi bukan berarti seluruh tanggung jawab dapat
-              diserahkan begitu saja kepada teknologi.
-            </p>
-
-            <p>
-              Hasil yang diberikan AI sangat dipengaruhi oleh konteks,
-              instruksi, dan arahan yang diberikan penggunanya. Oleh
-              karena itu, terdapat beberapa prinsip yang perlu
-              diperhatikan:
+              Untuk menjembatani perbedaan antara dunia kampus dan industri profesional,
+              terdapat kerangka kerja 9 langkah yang terbagi ke dalam 4 fase utama:
             </p>
 
             <div className={styles.principleList}>
               <div className={styles.principleItem}>
                 <span>01</span>
                 <div>
-                  <h3>Pahami Batasan AI</h3>
+                  <h3>FASE 1: Set Your Direction (Langkah 1 - 3)</h3>
                   <p>
-                    AI merupakan alat bantu yang memiliki keterbatasan.
-                    Instruksi yang kurang jelas dapat menghasilkan
-                    jawaban yang keliru atau tidak sesuai kebutuhan.
+                    Lakukan <em>gap analysis</em> antara keahlian saat ini dengan standar kualifikasi target,
+                    tentukan target industri dengan spesifik, serta miliki fleksibilitas terhadap
+                    peluang karier yang beririsan (<em>adjacent options</em>).
                   </p>
                 </div>
               </div>
@@ -271,11 +203,10 @@ export default function BlogTugasPage() {
               <div className={styles.principleItem}>
                 <span>02</span>
                 <div>
-                  <h3>Kendalikan Arsitektur dan Logika</h3>
+                  <h3>FASE 2: Align &amp; Specialize (Langkah 4 - 5)</h3>
                   <p>
-                    Manusia tetap perlu memahami struktur proyek,
-                    alur kerja, dan keputusan teknis. AI sebaiknya
-                    menjadi asisten, bukan pengganti pemahaman.
+                    Selaraskan proyek perkuliahan, tugas akhir, dan sertifikasi dengan kebutuhan pasar,
+                    serta pelajari analisis nilai dan risiko efisiensi penggunaan AI di bidang target.
                   </p>
                 </div>
               </div>
@@ -283,23 +214,77 @@ export default function BlogTugasPage() {
               <div className={styles.principleItem}>
                 <span>03</span>
                 <div>
-                  <h3>Lakukan Validasi dan Verifikasi</h3>
+                  <h3>FASE 3: Prove &amp; Connect (Langkah 6 - 7)</h3>
                   <p>
-                    Setiap hasil dari AI perlu diperiksa, diuji, dan
-                    ditinjau kembali. Kecepatan eksekusi harus
-                    diimbangi dengan ketelitian.
+                    Bangun portofolio karya nyata yang terverifikasi melalui magang, KKN, proyek lab, atau
+                    kompetisi, serta bangun relasi profesional berbasis rekam jejak hasil kerja (<em>weak ties</em>).
                   </p>
                 </div>
+              </div>
+
+              <div className={styles.principleItem}>
+                <span>04</span>
+                <div>
+                  <h3>FASE 4: Keep It Going (Langkah 8 - 9)</h3>
+                  <p>
+                    Tingkatkan keahlian secara berkelanjutan (<em>iterative learning</em>) dan tetap jaga
+                    keseimbangan kesehatan emosional serta orientasi diri selama proses perkembangan karier.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="perkembangan-ai" className={styles.articleSection}>
+            <div className={styles.sectionHeading}>
+              <span>03</span>
+              <div>
+                <span className={styles.sectionEyebrow}>AI DISRUPTION</span>
+                <h2>Perkembangan Industri, Mitos &amp; Risiko Generative AI</h2>
+              </div>
+            </div>
+
+            <p>
+              Evolusi industri digital dalam 20 tahun terakhir telah bergeser dari era Web dasar (~2000),
+              aplikasi mobile (~2010), gelombang <em>startup</em> (~2015), hingga era <em>Generative AI</em> (2022–sekarang).
+              Hal ini mengubah peran praktisi teknologi dari sekadar penulisan kode (<em>coder</em>) menjadi perancang
+              arsitektur sistem berbasis solusi kecerdasan buatan.
+            </p>
+
+            <div className={styles.careerGrid}>
+              <div className={styles.careerCard}>
+                <div className={`${styles.careerCardIcon} ${styles.accentIcon}`}>
+                  <Brain size={22} />
+                </div>
+                <span className={styles.careerTag}>MITOS VS FAKTA</span>
+                <h3>Manusia + AI</h3>
+                <p>
+                  AI tidak serta-merta menggantikan pekerjaan manusia secara total, melainkan mengubah alur kerja.
+                  Sinergi Manusia + AI hanya akan berhasil maksimal jika manusia yang mengoperasikannya sudah memiliki
+                  pemahaman dasar yang kuat.
+                </p>
+              </div>
+
+              <div className={styles.careerCard}>
+                <div className={`${styles.careerCardIcon} ${styles.mutedIcon}`}>
+                  <ShieldCheck size={22} />
+                </div>
+                <span className={styles.careerTag}>RISIKO INDUSTRI</span>
+                <h3>Risiko Unmonitored AI</h3>
+                <p>
+                  Penggunaan AI tanpa pengawasan dapat memicu penurunan kualitas (<em>hallucination</em>), celah keamanan
+                  sistem (<em>security weakness</em>), hingga pembengkakan biaya operasional (<em>cost overrun</em>).
+                </p>
               </div>
             </div>
 
             <div className={styles.quoteCard}>
               <Quote size={27} />
               <p>
-                AI dapat mempercepat pekerjaan, tetapi pemahaman dan
-                tanggung jawab tetap berada di tangan manusia.
+                Generative AI adalah akselerator hebat, tetapi logika mendasar, arsitektur sistem, dan integritas solusi
+                tetap berada di bawah kendali penuh manusia.
               </p>
-              <span>CATATAN REFLEKTIF</span>
+              <span>PRINSIP INTEGRASI AI</span>
             </div>
           </section>
 
@@ -308,23 +293,13 @@ export default function BlogTugasPage() {
               <span>04</span>
               <div>
                 <span className={styles.sectionEyebrow}>PERSONAL DEVELOPMENT</span>
-                <h2>Refleksi Pendidikan Karakter: Kunci Bertahan di Tengah Perubahan</h2>
+                <h2>Refleksi Pendidikan Karakter &amp; Mental Fitness</h2>
               </div>
             </div>
 
             <p>
-              Mengapa pembahasan tentang tren teknologi dan dunia kerja
-              disampaikan dalam mata kuliah Pendidikan Karakter?
-              Karena perkembangan teknologi bukan hanya menuntut
-              kemampuan teknis, tetapi juga kualitas pribadi yang
-              mendukung seseorang dalam mengambil keputusan dan
-              bertanggung jawab atas pekerjaannya.
-            </p>
-
-            <p>
-              Dari diskusi tersebut, terdapat tiga nilai karakter
-              yang menurut saya penting untuk dikembangkan sebagai
-              mahasiswa:
+              Mata kuliah Pendidikan Karakter memberikan pijakan penting: teknologi dan tren boleh berubah kapan saja,
+              tetapi karakter adalah fondasi utama untuk bertahan dan berkembang dalam ekosistem profesional.
             </p>
 
             <div className={styles.characterList}>
@@ -333,9 +308,8 @@ export default function BlogTugasPage() {
                 <div>
                   <h3>Adaptabilitas &amp; Growth Mindset</h3>
                   <p>
-                    Kemampuan menyesuaikan diri terhadap perubahan,
-                    terbuka terhadap pengetahuan baru, dan menjadikan
-                    tantangan sebagai kesempatan untuk berkembang.
+                    Ketangguhan untuk terus mempelajari hal baru, beradaptasi saat industri bergeser, dan tidak
+                    cepat merasa puas atas pencapaian akademis semata.
                   </p>
                 </div>
               </div>
@@ -343,11 +317,10 @@ export default function BlogTugasPage() {
               <div className={styles.characterItem}>
                 <div className={styles.characterIcon}><Sparkles size={23} /></div>
                 <div>
-                  <h3>Berpikir Kritis</h3>
+                  <h3>Berpikir Kritis (Critical Thinking)</h3>
                   <p>
-                    Tidak mudah mengikuti tren tanpa pertimbangan.
-                    Setiap perkembangan perlu dianalisis berdasarkan
-                    manfaat, risiko, dan dampaknya.
+                    Kemampuan mengevaluasi efisiensi, kelebihan, dan risiko dari setiap teknologi atau tren baru
+                    secara objektif sebelum menerapkannya.
                   </p>
                 </div>
               </div>
@@ -355,44 +328,29 @@ export default function BlogTugasPage() {
               <div className={styles.characterItem}>
                 <div className={styles.characterIcon}><ShieldCheck size={23} /></div>
                 <div>
-                  <h3>Integritas dan Tanggung Jawab</h3>
+                  <h3>Integritas &amp; Keseimbangan Mental</h3>
                   <p>
-                    Menggunakan teknologi secara bijak dan etis,
-                    menjaga kejujuran dalam proses belajar, serta
-                    bertanggung jawab terhadap hasil pekerjaan.
+                    Menjaga kejujuran dan etika dalam memanfaatkan AI, serta mengelola ekspektasi dan kesehatan mental
+                    selama menjalani masa pencarian kerja.
                   </p>
                 </div>
               </div>
             </div>
-
-            <p>
-              Ketiga nilai tersebut saling melengkapi. Kemampuan
-              beradaptasi membantu kita menghadapi perubahan,
-              berpikir kritis membantu menentukan arah, sedangkan
-              integritas memastikan setiap keputusan dilakukan
-              dengan tanggung jawab.
-            </p>
           </section>
 
           <section id="kesimpulan" className={styles.conclusion}>
-            <span className={styles.sectionEyebrow}>FINAL REFLECTION</span>
-            <h2>Teknologi berubah. Karakter menjadi fondasi.</h2>
+            <span className={styles.sectionEyebrow}>STEPS AHEAD</span>
+            <h2>3 Langkah Utama Persiapan Mahasiswa Hari Ini</h2>
             <p>
-              Pertemuan dengan alumni yang berprofesi sebagai Software
-              Architect memberikan gambaran yang lebih realistis
-              mengenai dunia kerja saat ini. Industri tidak hanya
-              membutuhkan individu yang menguasai tools atau bahasa
-              pemrograman tertentu, tetapi juga pembelajar sepanjang
-              hayat yang memiliki fondasi logika kuat, kemampuan
-              beradaptasi, dan karakter yang tangguh.
+              Sebagai rangkuman, ada tiga tindakan konkret yang bisa langsung diterapkan oleh mahasiswa semester ini:
             </p>
             <p>
-              Bagi saya, pelajaran terpenting dari sesi ini adalah
-              bahwa teknologi seharusnya menjadi sarana untuk
-              berkembang, bukan sesuatu yang membuat kita berhenti
-              berpikir. Kita perlu terus belajar, berani mengeksplorasi
-              hal baru, dan tetap bertanggung jawab atas setiap
-              keputusan yang diambil.
+              <strong>1. Kerjakan Proyek Nyata &amp; Terverifikasi:</strong> Manfaatkan program magang, KKN, riset lab,
+              atau kompetisi untuk membangun portofolio pembuktian.<br />
+              <strong>2. Bidik Target Pasar Kerja dengan Tepat:</strong> Pahami struktur industri dan tetap terbuka
+              terhadap peluang karier yang beririsan.<br />
+              <strong>3. Kuasai AI secara Proporsional:</strong> Pelajari di mana AI memberikan nilai efisiensi dan
+              kenali batasan teknisnya agar tidak salah dalam pengaplikasian.
             </p>
             <div className={styles.conclusionFooter}>
               <span>END OF ARTICLE</span>
@@ -426,19 +384,18 @@ export default function BlogTugasPage() {
           <div className={styles.sidebarQuote}>
             <Quote size={23} />
             <p>
-              The future belongs to those who keep learning,
-              adapting, and thinking critically.
+              The future belongs to those who learn, adapt, and build real-world proof.
             </p>
-            <span>LEARNING MINDSET</span>
+            <span>CAREER MINDSET</span>
           </div>
 
           <div className={styles.sidebarNote}>
             <div className={styles.noteIcon}><BookOpen size={19} /></div>
             <div>
-              <strong>Catatan mahasiswa</strong>
+              <strong>Catatan Mahasiswa</strong>
               <p>
-                Sebuah rangkuman dan refleksi dari sesi sharing
-                alumni dalam mata kuliah Pendidikan Karakter.
+                Daftar poin dan rangkuman reflektif dari pertemuan alumni Telkom University
+                dalam mata kuliah Pendidikan Karakter.
               </p>
             </div>
           </div>
