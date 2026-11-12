@@ -35,18 +35,19 @@ const initialBins: Bin[] = [
 ];
 
 const initialStudents: Student[] = [
-  { nim: "1101230001", name: "Ahmad Zihad", faculty: "FTE (Teknik Elektro)", sorted: 142, points: 1380 },
-  { nim: "1301230042", name: "Nadia Safira", faculty: "FIF (Informatika)", sorted: 128, points: 1250 },
-  { nim: "1201230019", name: "Rizky Ramadhan", faculty: "FRI (Rekayasa Industri)", sorted: 115, points: 1110 },
-  { nim: "1501230088", name: "Citra Lestari", faculty: "FEB (Ekonomi & Bisnis)", sorted: 98, points: 960 },
-  { nim: "1601230014", name: "Dimas Pratama", faculty: "FIK (Industri Kreatif)", sorted: 84, points: 815 },
+  { nim: "103032600155", name: "Evita Khairani", faculty: "Telkom University", sorted: 142, points: 1380 },
+  { nim: "103032600125", name: "Muhammad Rafi Al-Ghazali", faculty: "Telkom University", sorted: 128, points: 1250 },
+  { nim: "103032600111", name: "Muhammad Rofi Nurzihad", faculty: "Telkom University", sorted: 115, points: 1110 },
+  { nim: "103032600159", name: "Raditya Putra Ramadan", faculty: "Telkom University", sorted: 98, points: 960 },
+  { nim: "103032600102", name: "Raffi Adz Dzikry", faculty: "Telkom University", sorted: 84, points: 815 },
+  { nim: "103032600200", name: "James Jayasena", faculty: "Telkom University", sorted: 72, points: 700 },
 ];
 
 const initialLogs: Log[] = [
-  { time: "11:58", user: "Ahmad Zihad (1101230001)", type: "Organik (Basah)", location: "Area Gate 2", status: "Tepat", delta: "+10" },
+  { time: "11:58", user: "Evita Khairani (103032600155)", type: "Organik (Basah)", location: "Area Gate 2", status: "Tepat", delta: "+10" },
   { time: "11:54", user: "Mode Anonim (Publik)", type: "Anorganik (Kering)", location: "Kantin Teknik", status: "Tepat", delta: "Publik" },
-  { time: "11:49", user: "Nadia Safira (1301230042)", type: "Anorganik (Kering)", location: "Gedung Kuliah Umum", status: "Tepat", delta: "+10" },
-  { time: "11:42", user: "Rizky Ramadhan (1201230019)", type: "Koreksi Otomatis", location: "Area Gate 2", status: "Koreksi", delta: "-5" },
+  { time: "11:49", user: "Muhammad Rafi Al-Ghazali (103032600125)", type: "Anorganik (Kering)", location: "Gedung Kuliah Umum", status: "Tepat", delta: "+10" },
+  { time: "11:42", user: "Muhammad Rofi Nurzihad (103032600111)", type: "Koreksi Otomatis", location: "Area Gate 2", status: "Koreksi", delta: "-5" },
   { time: "11:35", user: "Mode Anonim (Publik)", type: "Organik (Basah)", location: "Asrama Putra", status: "Tepat", delta: "Publik" },
 ];
 

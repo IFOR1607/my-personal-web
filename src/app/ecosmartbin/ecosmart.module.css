@@ -8,8 +8,23 @@
 .app * { box-sizing: border-box; }
 .layout { min-height: 100vh; display: flex; }
 .sidebar {
-  width: 256px; flex-shrink: 0; background: #0f172a; color: white;
-  display: flex; flex-direction: column; justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 256px;
+  flex-shrink: 0;
+
+  background: #0f172a;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-y: auto;
+  z-index: 100;
 }
 .brand {
   padding: 24px; display: flex; align-items: center; gap: 12px;
@@ -44,7 +59,11 @@
   width: 7px; height: 7px; display: inline-block; border-radius: 50%; background: #10b981;
   box-shadow: 0 0 0 4px #10b98120;
 }
-.main { flex: 1; min-width: 0; }
+.main {
+  flex: 1;
+  min-width: 0;
+  margin-left: 256px;
+}
 .header {
   position: sticky; top: 0; z-index: 20; background: white; border-bottom: 1px solid #e2e8f0;
   padding: 17px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px;
@@ -220,13 +239,54 @@
   .chartGrid { grid-template-columns: 1fr; }
 }
 @media (max-width: 850px) {
-  .layout { flex-direction: column; }
-  .sidebar { width: 100%; }
-  .prototype { display: none; }
-  .navigation { flex-direction: row; overflow-x: auto; padding: 10px 14px; }
-  .navButton { width: auto; }
-  .studentGrid { grid-template-columns: 1fr; }
-  .header { align-items: flex-start; flex-direction: column; }
+ @media (max-width: 850px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    top: auto;
+    left: auto;
+    bottom: auto;
+
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+
+    overflow-y: visible;
+  }
+
+  .main {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .prototype {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px 14px;
+  }
+
+  .navButton {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .studentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 }
 @media (max-width: 560px) {
   .content { padding: 14px; }
