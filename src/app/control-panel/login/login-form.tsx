@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -12,6 +11,8 @@ import {
   ArrowLeft,
   ShieldCheck,
 } from "lucide-react";
+// 1. Import fungsi login dari actions.ts
+import { login } from "./actions";
 
 export default function ControlPanelLogin() {
   const [showPassword, setShowPassword] = useState(false);
@@ -63,8 +64,8 @@ export default function ControlPanelLogin() {
             and manage your personal website.
           </p>
 
-          {/* LOGIN FORM */}
-          <form className={styles["login-form"]}>
+          {/* 2. Tambahkan action={login} pada tag form */}
+          <form action={login} className={styles["login-form"]}>
 
             <div className={styles["login-field"]}>
               <label htmlFor="email">Email Address</label>
@@ -72,11 +73,14 @@ export default function ControlPanelLogin() {
               <div className={styles["login-input-wrapper"]}>
                 <Mail size={18} />
 
+                {/* 3. Tambahkan name="email" */}
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="admin@example.com"
                   autoComplete="username"
+                  required
                 />
               </div>
             </div>
@@ -87,11 +91,14 @@ export default function ControlPanelLogin() {
               <div className={styles["login-input-wrapper"]}>
                 <LockKeyhole size={18} />
 
+                {/* 4. Tambahkan name="password" */}
                 <input
                   id="password"
+                  name="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
                   autoComplete="current-password"
+                  required
                 />
 
                 <button
@@ -111,7 +118,8 @@ export default function ControlPanelLogin() {
               </div>
             </div>
 
-            <button type="button" className={styles["login-submit"]}>
+            {/* 5. Ubah type jadi "submit" */}
+            <button type="submit" className={styles["login-submit"]}>
               Sign In
             </button>
 
